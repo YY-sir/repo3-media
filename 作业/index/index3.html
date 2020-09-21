@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index3.css">
+    <link rel="stylesheet" href="../css/audio.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            $(".image>a").click(function(){
+                var way = $(this).children("img").attr("src");
+                $(".left>img").attr("src",way);
+
+            })   
+            audioPlay();         
+        })
+    </script>
+    <audio id="myaudio" src="../audio/钢琴曲 - 暮光之城.mp3" autoplay loop></audio>
+    <div class="play" id="note" style="width: 35px ;height: 35px;border-radius: 20px; background-color: rgba(0, 60, 255, 0.5);position: absolute;top: 20px;left: 20px;cursor: pointer;text-align: center;line-height: 35px;color: #fff;">音</div>
+    <div class="f">
+    <div class="show">
+        <div class="show-box">
+            <div class="left">
+                <img src="../image/index4/1.jpg" alt="">
+            </div>
+            <div class="right">
+                <p>生命好在无意义，才容得下各自赋予意义。假如生命是有意义的，这个意义却不符合我的志趣，那才尴尬狼狈。</p>——木心《素履之往》
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="">个人作品</a>
+    </div>
+    <div class="main">
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/1.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">春</p>
+                <p class="sentence">到处弥漫着病毒的恐惧，但是春天依旧会到来，就在那不久的将来。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a class=""><img src="../image/index4/2.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">我的天空</p>
+                <p class="sentence">在家里的小院里抬头望时，好像想不起那个嵌在无限蓝天的童年。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/3.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">城市</p>
+                <p class="sentence">下面的世界是同样的辽阔吗？下面的世界看得到阳光吗？</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/4.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">广州塔</p>
+                <p class="sentence">在夜晚，依旧光彩夺目。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/5.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">竹竿上的月亮</p>
+                <p class="sentence">昏暗的傍晚，淡淡的月亮。没有歌声，没有灯光，只是静静的欣赏。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/6.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">梦</p>
+                <p class="sentence">每一个男孩，都会有一个篮球梦。后来慢慢的，我们长大了，梦也醒了。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a class=""><img src="../image/index4/7.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">洞悉</p>
+                <p class="sentence">熟悉又陌生，看着前方，又感觉是在注释着后方。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/8.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">湖</p>
+                <p class="sentence">位于岭南印象园，极具岭南风格，复原上个世纪传统建筑和和氛围。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/9.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">母亲的花</p>
+                <p class="sentence">年复一年的开着黄色的花，越来越皱的手，越来越驼的背，却渐渐失去了颜色。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a class=""><img src="../image/index4/10.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">失色</p>
+                <p class="sentence">广美毕业展作品。纵使周围已不在是原来的样子，“我”还是那个我，世间不一样的烟火。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/11.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">十字路口</p>
+                <p class="sentence">去往北亭，那个夜晚充斥着“繁华的味道”的小村。</p>    
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/12.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">清晨</p>
+                <p class="sentence">一缕缕阳光，一个个行人，一切都是那么惬意。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/13.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">夜晚</p>
+                <p class="sentence">每一个这样的夜晚，都有那么一群人，白天行色匆匆，夜晚依旧孜孜不倦。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/14.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">等待</p>
+                <p class="sentence">喜欢着一个人，爱着一个人，你愿意用一半的时间去等待另一半。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a class=""><img src="../image/index4/15.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">广州大学</p>
+                <p class="sentence">“初来乍到”，踏进这个梦开始的地方。拾起笔，开始写下属于自己的华章。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/16.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">猫</p>
+                <p class="sentence">喜欢玩耍，喜欢注视，没有顾虑。</p>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/17.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">傍晚的家乡</p>
+                <p class="sentence">没有喧嚣，没有拥挤的车道，没有匆忙的行人。炊烟袅袅升起，饭菜肆意飘香。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/18.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">群山环绕</p>
+                <p class="sentence">被群山环绕并不可怕，可怕的是周围人心的冷淡和看不到的前方。</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/19.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">朴素</p>
+                <p class="sentence">简单不失光泽，生活本来不就是这样吗？</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <a  class=""><img src="../image/index4/20.jpg" alt=""></a>
+            </div>
+            <div class="txt">
+                <p class="name">清晖园</p>
+                <p class="sentence">碧水、绿树、小桥、曲廊、亭台，风格雅致古朴，尽显了岭南庭院的精髓与江南园林之特色。</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h5>来自业余爱好者：思念闲鱼</h5>
+        <h4>2020-04-16</h4>
+        <h5>关于最真实的感想，敬请期待更好的作品</h5>
+    </div>
+</body>
+</html>

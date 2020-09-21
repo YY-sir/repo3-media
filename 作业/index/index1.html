@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index1.css">
+    <link rel="stylesheet" href="../css/audio.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/audio.js"></script>
+</head>
+<body>
+    <script>
+        $(function(){
+            $(".buttom>a").mouseover(function(){
+                $(this).siblings().stop().fadeTo(400,0.3);
+                $("body").addClass("add");
+                $(this).children("p").stop().animate({top:'50%'},600);
+                $(".footer>p").addClass("pAdd");
+                $(this).children("h4").stop().fadeIn(1000);
+                $(".top-right").addClass("top-rightAdd");
+            })
+            $(".buttom>a").mouseleave(function(){
+                $(this).siblings().stop().fadeTo(400,1);
+                $(this).children("p").stop().animate({top:'100%'},300)
+                $(this).children("h4").stop().fadeOut(500);
+            })
+            $(".buttom").mouseleave(function(){
+                $("body").removeClass("add");
+                $(".footer>p").removeClass("pAdd");
+                $(".top-right").removeClass("top-rightAdd");
+            })
+            $(".img-slide").eq(0).siblings("img").hide();
+            var index=0;
+            //改变图片
+            function ChangeImg() {
+                index++;
+                var a=document.getElementsByClassName("img-slide");
+                if(index>=a.length) index=0;
+                $(".img-slide").eq(index).siblings("img").fadeTo(2500,0);
+                $(".img-slide").eq(index).fadeTo(2500,1);
+            }
+            //设置定时器，每隔两秒切换一张图片
+            setInterval(ChangeImg,4500);
+            audioPlay();
+        })  
+    </script>
+    <audio id="myaudio" src="../audio/Passenger - Let Her Go - 伴奏.mp3" autoplay loop></audio>
+    <div class="play" id="note" style="width: 35px ;height: 35px;border-radius: 20px; background-color: rgba(0, 139, 58, 0.7);position: absolute;top: 20px;left: 20px;cursor: pointer;text-align: center;line-height: 35px;color: #fff;z-index: 1000;">音</div>
+    <div class="header">
+        <img src="../image/index1/广大/650/1.jpg" alt="" class="img-slide">
+        <img src="../image/index1/广大/650/2.jpg" alt="" class="img-slide">
+        <img src="../image/index1/广大/650/3.jpg" alt="" class="img-slide">
+        <img src="../image/index1/广大/650/4.jpg" alt="" class="img-slide">
+        <img src="../image/index1/广大/650/5.jpg" alt="" class="img-slide">
+    </div>
+    <div class="container">
+        <div class="top">
+            <div class="top-left">
+                <video controls class="v" src="../video/0.mp4">
+                    
+                </video>
+            </div>
+            <div class="top-right">
+                <p style="padding: 15px;font-size: 15px;">
+                    后知后觉已经大三末期了，离大四只是弹指之间。初入大学，懵懂之间，参加各种部门面试，请教师兄师姐学习方法，却在一个个活动，一次次游戏中淡忘了初心。步入大二，基础知识不牢固，学习没有找到合适的方法，每次实验总是事倍功半。后来，慢慢的也不在活动中出现，也慢慢从众多话语中拾起那句最容易被忽略的提醒：“大学还是要以学习为主。”现在，没有今非昔比，但也不再晃荡不羁；没有壮志凌云，却不忘初心；没有投机取巧，更多的是困而学之。
+                </p>
+            </div>
+        </div>
+        <ul class="buttom">
+            <!-- 宿舍，图书馆，教室，饭堂
+                舍友，部门，社团，篮球队 -->
+            <a href="" class="frontbody">
+                <img src="../image/index1/兰苑1.jpg" alt="">
+                <h4>兰苑饭堂</h4>
+                <p><span>01 </span>梅兰竹菊，春夏秋冬，一直都在我们每一个学生的身后。为我们停供不只是饭菜，更是前进的动力；那不只是我们餐食的场所，更是我们成长的“见证者”。</p>
+            </a>
+            <a href="" class="frontbody first">
+                <img src="../image/index1/图书馆1.jpg" alt="">
+                <h4>一塔湖</h4>
+                <p><span>02 </span>博观而约取,厚积而薄发。我想，每天来这里的人都有着追求的理想，和那沉重的肩担。我们都在一点一滴的吸取着知识，迟早有一天能够一鸣惊人。</p>
+            </a>
+            <a href="" class="frontbody">
+                <img src="../image/index1/理南1.jpg" alt="">
+                <h4>理科南楼</h4>
+                <p><span>03 </span>伴随着一声声清脆的铃响，我们上课下课；伴随着一句句老师的教导，我们渐渐懂得；便随着一步步匆匆的步伐，我们大学已悄悄逝去。</p>
+            </a>
+            <a href="" class="frontbody">
+                <img src="../image/index1/宿舍1.jpg" alt="">
+                <h4>B25-522宿舍</h4>
+                <p><span>04 </span>这是我们另一个“家”，在这，我们有欢声笑语，也有沉声静气；有埋头苦读，也有意懒心慵。我们有一天会离开，但是我们永远不会忘记。</p>
+            </a>
+
+            <a href="" class="frontbody">
+                <img src="../image/index1/篮球队.jpg" alt="">
+                <h4>软件173篮球队</h4>
+                <p><span>05 </span>我们没有别人口中的天赋，我们也从不出众，我们没有太多的梦想，可是，我们却无比努力，只是，不想让自己的大学留下遗憾。</p>
+            </a>
+            <a href="" class="frontbody first">
+                <img src="../image/index1/社团.jpg" alt="">
+                <h4>轮滑协会</h4>
+                <p><span>06 </span>因为喜欢那种踩着轮子，在地上肆意滑行的感觉，所以我们聚在轮协。因为热爱大学的生活，所以我们才更是真正的自己。</p>
+            </a>
+            <a href="" class="frontbody">
+                <img src="../image/index1/工作站1.jpg" alt="">
+                <h4>筑梦工作站</h4>
+                <p><span>07 </span>我们都来自不一样的家庭，可是我们却有着共同的梦想。在我们的大家庭里，我们都为学院、学校尽一份力，为我们自己的将来尽一份力。</p>
+            </a>
+            <a href="" class="frontbody">
+                <img src="../image/index1/同乡会.jpg" alt="">
+                <h4>同乡会</h4>
+                <p><span>08 </span>俗话说：千里有缘来相会。我们不就是如此吗？在这个承载着我们未来的希望的大船上，我们却来自同一个家乡，怀揣着同一份乡愁。</p>
+            </a>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>叙述者：思念闲鱼</p>
+        <p>2020-04-21</p>
+        <p>大学还未结束，未来才刚刚开始，期待那个更好的我们</p>
+    </div>
+</body>
+</html>
